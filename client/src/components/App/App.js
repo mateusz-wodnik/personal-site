@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import Sidebar from '../Sidebar/Sidebar';
 import Home from '../Home/Home'
+import Cv from '../Cv/Cv';
 
 class App extends Component {
   render() {
@@ -13,7 +14,8 @@ class App extends Component {
       <div className={styles.container}>
         <Sidebar />
         <Switch>
-          <Route exact path={"/"} component={Home} />
+          <Route exact path={"/personal-site"} component={Home} />
+          <Route exact path={"/personal-site/cv"} component={Cv} />
         </Switch>
       </div>
     );
