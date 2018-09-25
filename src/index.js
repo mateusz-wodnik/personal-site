@@ -5,7 +5,7 @@ import './index.sass';
 import App from './components/App/App';
 import Store from './Store'
 import { BrowserRouter } from 'react-router-dom'
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
     <Store>
@@ -15,4 +15,4 @@ ReactDOM.render(
     </Store>,
     document.getElementById('root')
 );
-registerServiceWorker();
+// registerServiceWorker();
